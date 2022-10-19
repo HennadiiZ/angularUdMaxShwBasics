@@ -30,3 +30,6 @@ export class AppModule {}
 // 20. Using Custom Components
 // 21. Creating Components with the CLI & Nesting Components
 // 22. Working with Component Templates
+
+// A Basic Project Setup using Bootstrap for Styling
+
