@@ -15,6 +15,9 @@ export class ServerComponent implements OnInit {
   inputInfo!: HTMLInputElement;
   inputInfoTwo!: HTMLInputElement;
 
+  serverName:any = 'TestServer';
+  serverCreationStatus = 'not created';
+
   ngOnInit(): void {
     setTimeout(() => {
       this.allowNewServer = true;
@@ -23,6 +26,11 @@ export class ServerComponent implements OnInit {
 
   inputInfoMethod(event: any): void {
     this.inputInfo = <HTMLInputElement>event.target.value;
+    this.serverName = this.inputInfo;
+  }
+
+  onCreateServer(event: any): void {
+    this.serverCreationStatus = 'Server was created successfully ' + this.serverName;
   }
 
 }

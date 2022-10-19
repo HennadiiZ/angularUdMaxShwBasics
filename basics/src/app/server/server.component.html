@@ -6,6 +6,7 @@
     <button
       class="btn btn-primary"
       [disabled]="!allowNewServer"
+      (click)="onCreateServer($event)"
     >
       Add Server
     </button>
@@ -22,6 +23,11 @@
   <div> <!-- Two-Way-Databinding  (input)="inputInfoMethod($event)" -->
     <input type="text" class="input" [(ngModel)]="inputInfoTwo">
     {{inputInfoTwo}}
+  </div>
+
+  <div>
+    <input type="text" class="input" [(ngModel)]="serverName">
+    {{ serverCreationStatus }}
   </div>
 </div>
 

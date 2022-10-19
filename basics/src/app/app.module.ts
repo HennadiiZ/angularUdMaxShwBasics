@@ -55,3 +55,5 @@ export class AppModule {}
     // ngModel  directive
     // FormsModule  to the imports[]  array in the AppModule.
 // 34. Two-Way-Databinding
+
+// 35. Combining all Forms of Databinding
