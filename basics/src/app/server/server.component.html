@@ -1,2 +1,31 @@
-<p>server component !!!!</p>
-<!-- <app-servers></app-servers> -->
+<div class="body">
+  <p> Users {{name}} and {{id}} .</p>  <!-- string interpolation {{name}} -->
+
+
+  <div> <!-- property binding  [disabled]="!allowNewServer" -->
+    <button
+      class="btn btn-primary"
+      [disabled]="!allowNewServer"
+    >
+      Add Server
+    </button>
+
+    <p>{{ allowNewServer }}</p>
+    <p [innerText]="allowNewServer"></p>
+  </div>
+
+  <div> <!-- event binding  (input)="inputInfoMethod($event)" -->
+    <input type="text" class="input" (input)="inputInfoMethod($event)">
+    {{inputInfo}}
+  </div>
+
+  <div> <!-- Two-Way-Databinding  (input)="inputInfoMethod($event)" -->
+    <input type="text" class="input" [(ngModel)]="inputInfoTwo">
+    {{inputInfoTwo}}
+  </div>
+</div>
+
+
+
+
+

@@ -7,6 +7,7 @@ import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessComponent } from './success/success.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SuccessComponent } from './success/success.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -39,3 +41,17 @@ export class AppModule {}
 
 // 24. Fully Understanding the Component Selector
 // 25. [OPTIONAL] Assignment Solution
+
+
+// 26. What is Databinding?
+// 27. String Interpolation
+// 28. Property Binding
+// 29. Property Binding vs String Interpolation
+// 30. Event Binding
+// 31. Bindable Properties and Events
+    // Googling for YOUR_ELEMENT properties  or YOUR_ELEMENT events
+// 32. Passing and Using Data with Event Binding
+// 33. Important: FormsModule is Required for Two-Way-Binding!
+    // ngModel  directive
+    // FormsModule  to the imports[]  array in the AppModule.
+// 34. Two-Way-Databinding

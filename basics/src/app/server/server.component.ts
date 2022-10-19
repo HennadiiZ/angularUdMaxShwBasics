@@ -8,7 +8,22 @@ import { Component, OnInit } from "@angular/core";
 
 export class ServerComponent implements OnInit {
 
-  ngOnInit(): void {}
+  name: string = 'Igor';
+  id: number = 4;
+
+  allowNewServer = false;
+  inputInfo!: HTMLInputElement;
+  inputInfoTwo!: HTMLInputElement;
+
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.allowNewServer = true;
+    }, 5000)
+  }
+
+  inputInfoMethod(event: any): void {
+    this.inputInfo = <HTMLInputElement>event.target.value;
+  }
 
 }
 
