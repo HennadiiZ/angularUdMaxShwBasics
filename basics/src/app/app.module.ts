@@ -57,3 +57,10 @@ export class AppModule {}
 // 34. Two-Way-Databinding
 
 // 35. Combining all Forms of Databinding
+// 36. [OPTIONAL] Assignment Solution
+
+// 37. Understanding Directives
+// 38. Using ngIf to Output Data Conditionally
+// 39. Enhancing ngIf with an Else Condition
+// 40. Styling Elements Dynamically with ngStyle
+// 41. Applying CSS Classes Dynamically with ngClass

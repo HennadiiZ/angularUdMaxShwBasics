@@ -29,9 +29,66 @@
     <input type="text" class="input" [(ngModel)]="serverName">
     {{ serverCreationStatus }}
   </div>
+
+  <div class="task"> <!-- task -->
+    <input type="text" class="input" [(ngModel)]="username">
+    <p>{{ username }}</p>
+    <br>
+    <button
+      class="btn btn-primary"
+      [disabled]="!username"
+      (click)="toEmtyString()"
+    >
+      Add name
+    </button>
+  </div>
+</div>
+<hr>
+
+<div class="body-2"> <!-- *ngIf -->
+  <p *ngIf="serverCreated">
+    Server was created successfully, name is {{ name }}
+  </p>
+  <button
+    class="btn btn-warning"
+    (click)="serverCreate()"
+  >
+    Add name
+  </button>
+</div>
+<hr>
+<div class="body-2"> <!-- *ngIf else -->
+  <p *ngIf="serverCreated; else notCreated">
+    Server was created successfully, name is {{ name }}
+  </p>
+  <ng-template #notCreated>
+    <p>Server was not created</p>
+  </ng-template>
+  <button
+    class="btn btn-warning"
+    (click)="serverCreate()"
+  >
+    Add name
+  </button>
+</div>
+<hr>
+
+<div class="body-3"> <!-- [ngStyle] -->
+  <button class="btn btn-success" (click)="changeColor()">change color</button>
+  <!-- <p [ngStyle]="{ backgroundColor: getColor()}">{{ serverStatus }}</p> -->
+  <!-- <p [ngStyle]="{ 'background-color': getColor()}">{{ serverStatus }}</p> -->
+  <p [ngStyle]="{ 'color': getColor()}">{{ serverStatus }}</p>
 </div>
 
+<div class="body-4"> <!-- [ngClass] -->
+  <button class="btn btn-success" (click)="changeColorTwo()">change color</button>
+  <p
+    [ngStyle]="{ 'color': getColorTwo()}"
 
+    [ngClass]="{ 'online': serverStatusTwo, 'offline': !serverStatusTwo}"
+  >{{ serverStatus }}</p>
+  <!-- [ngClass]="{ 'online': serverStatusTwo}" -->
+</div>
 
 
 

@@ -17,6 +17,15 @@ export class ServerComponent implements OnInit {
 
   serverName:any = 'TestServer';
   serverCreationStatus = 'not created';
+  username: any;
+  serverCreated = false;
+
+  serverStatus: any = 'offLine';
+  serverStatusTwo = false;
+
+  constructor() {
+    this.serverStatus = Math.random() > 0.5 ? 'offline' : 'online';
+  }
 
   ngOnInit(): void {
     setTimeout(() => {
@@ -33,6 +42,29 @@ export class ServerComponent implements OnInit {
     this.serverCreationStatus = 'Server was created successfully ' + this.serverName;
   }
 
+  toEmtyString():void {
+    this.username = '';
+  }
+
+  serverCreate():void {
+    this.serverCreated = !this.serverCreated;
+  }
+
+  changeColor():void {
+    this.serverStatus = Math.random() > 0.5 ? 'offline' : 'online';
+  }
+
+  getColor(): string {
+    return this.serverStatus === 'online' ? 'green' : 'red';
+  }
+
+  changeColorTwo():void {
+    this.serverStatusTwo = !this.serverStatusTwo;
+  }
+
+  getColorTwo(): string {
+    return this.serverStatusTwo === true ? 'green' : 'red';
+  }
 }
 
 
