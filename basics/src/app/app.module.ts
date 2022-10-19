@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
+import { WarningAlertComponent } from './warning-alert/warning-alert.component';
+import { SuccessComponent } from './success/success.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ServerComponent,
-    ServersComponent
+    ServersComponent,
+    WarningAlertComponent,
+    SuccessComponent
   ],
   imports: [
     BrowserModule,
@@ -33,3 +37,5 @@ export class AppModule {}
 
 // A Basic Project Setup using Bootstrap for Styling
 
+// 24. Fully Understanding the Component Selector
+// 25. [OPTIONAL] Assignment Solution
