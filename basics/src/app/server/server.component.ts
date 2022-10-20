@@ -22,6 +22,7 @@ export class ServerComponent implements OnInit {
 
   serverStatus: any = 'offLine';
   serverStatusTwo = false;
+  serversArray = ['TestServer1', 'TestServer2'];
 
   constructor() {
     this.serverStatus = Math.random() > 0.5 ? 'offline' : 'online';

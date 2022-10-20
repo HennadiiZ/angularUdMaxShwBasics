@@ -64,3 +64,6 @@ export class AppModule {}
 // 39. Enhancing ngIf with an Else Condition
 // 40. Styling Elements Dynamically with ngStyle
 // 41. Applying CSS Classes Dynamically with ngClass
+
+// 42. Outputting Lists with ngFor
+
