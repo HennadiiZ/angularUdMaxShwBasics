@@ -92,3 +92,8 @@ export class AppModule {}
 // 73. More on View Encapsulation
 
 // 74. Using Local References in Templates
+
+// 75. @ViewChild() in Angular 8+
+// 76. Getting Access to the Template & DOM with @ViewChild
+
+// 77. Projecting Content into Components with ng-content
