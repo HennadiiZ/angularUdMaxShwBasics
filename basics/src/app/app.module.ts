@@ -90,3 +90,5 @@ export class AppModule {}
 
 // 72. Understanding View Encapsulation
 // 73. More on View Encapsulation
+
+// 74. Using Local References in Templates
