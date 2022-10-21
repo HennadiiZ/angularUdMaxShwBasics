@@ -81,3 +81,8 @@ export class AppModule {}
 
 // 65. Splitting Apps into Components
 // 66. Property & Event Binding Overview
+// 67. Binding to Custom Properties
+// 68. Assigning an Alias to Custom Properties
+// 69. Binding to Custom Events
+// 70. Assigning an Alias to Custom Events
+// 71. Custom Property and Event Binding Summary

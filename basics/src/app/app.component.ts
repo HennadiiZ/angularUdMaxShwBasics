@@ -8,6 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   serverElements: any = [];
+  constructor() {
+    console.log(this.serverElements);
+  }
   // newServerName = '';
   // newServerContent = '';
 
@@ -29,5 +32,11 @@ export class AppComponent {
 
   serverElementsMethod(event: any): void {
     this.serverElements.push(event);
+    console.log(this.serverElements);
+    console.log(event);
+  }
+
+  onServerAdded(serverData: { serverName: string; serverContent: string }): void {
+    this.serverElements.push(serverData);
   }
 }
