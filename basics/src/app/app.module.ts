@@ -97,3 +97,8 @@ export class AppModule {}
 // 76. Getting Access to the Template & DOM with @ViewChild
 
 // 77. Projecting Content into Components with ng-content
+
+
+// 78. Understanding the Component Lifecycle
+// 79. Seeing Lifecycle Hooks in Action
+// 80. Lifecycle Hooks and Template Access

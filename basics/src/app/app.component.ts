@@ -39,4 +39,8 @@ export class AppComponent {
   onServerAdded(serverData: { serverName: string; serverContent: string }): void {
     this.serverElements.push(serverData);
   }
+
+  onChangeFirst() {
+    this.serverElements[0].name = "changed!";
+  }
 }
