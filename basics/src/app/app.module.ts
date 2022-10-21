@@ -8,6 +8,8 @@ import { ServersComponent } from './servers/servers.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessComponent } from './success/success.component';
 import { FormsModule } from '@angular/forms';
+import { CockpitComponent } from './cockpit/cockpit.component';
+import { ServerElementComponent } from './server-element/server-element.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { FormsModule } from '@angular/forms';
     ServerComponent,
     ServersComponent,
     WarningAlertComponent,
-    SuccessComponent
+    SuccessComponent,
+    CockpitComponent,
+    ServerElementComponent
   ],
   imports: [
     BrowserModule,
@@ -76,3 +80,4 @@ export class AppModule {}
 
 
 // 65. Splitting Apps into Components
+// 66. Property & Event Binding Overview
