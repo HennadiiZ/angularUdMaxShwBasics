@@ -66,4 +66,13 @@ export class AppModule {}
 // 41. Applying CSS Classes Dynamically with ngClass
 
 // 42. Outputting Lists with ngFor
+// Assignment 3: Practicing Directives
+// 43. [OPTIONAL] Assignment Solution
+// 44. Getting the Index when using ngFor
 
+
+// Section 4: DEBUGGING
+
+
+
+// 65. Splitting Apps into Components

@@ -96,5 +96,76 @@
   ></app-servers>
 </div>
 
+<!-- <div class="body-6">
+  <button
+    class="btn btn-primary"
+    (click)="serverStatusTwo = !serverStatusTwo"
+  >
+    Display Details
+  </button>
+  <br>
+
+  <p *ngIf="serverStatusTwo">
+    {{ secretPass }}
+  </p>
+</div> -->
+
+<!-- my solution -->
+<!-- <div class="body-6">
+  <button
+    class="btn btn-primary"
+    (click)="serverStatusChange()"
+  >
+    Display Details
+  </button>
+  <br>
+
+
+  <div *ngIf="serverStatusTwo">
+    <p
+      *ngFor="let server of serversArrayTwo; let index = index"
+      [ngStyle]="{ 'background-color': 'blue'}"
+      [ngClass]="{ 'online': serverStatusTwo, 'offline': !serverStatusTwo}"
+    >
+      {{ secretPass }} {{ index }} {{ server }}
+    </p>
+  </div>
+</div> -->
+
+<div class="body-6">
+
+  <!-- <button
+    class="btn btn-primary"
+    (click)="serverStatusTwo = !serverStatusTwo"
+  >
+    Display Details
+  </button> -->
+
+  <button
+    class="btn btn-primary"
+    (click)="serverStatusChange()"
+  >
+    Display Details
+  </button>
+
+  <br>
+  <p *ngIf="serverStatusTwo">secret pass = tuna</p>
+  <br>
+  <div
+    *ngFor="let l of log; let index = index"
+    [ngStyle]="{ 'background-color': l >= 5 ? 'blue' : 'transparent' }"
+    [ngClass]="{ 'red': l >= 5 }"
+  >{{index}} {{l}}</div>
+
+  <!-- <div *ngIf="serverStatusTwo">
+    <p
+      *ngFor="let server of serversArrayTwo; let index = index"
+      [ngStyle]="{ 'background-color': 'blue'}"
+      [ngClass]="{ 'online': serverStatusTwo, 'offline': !serverStatusTwo}"
+    >
+      {{ secretPass }} {{ index }} {{ server }}
+    </p>
+  </div> -->
+</div>
 
 

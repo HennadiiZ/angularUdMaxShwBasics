@@ -28,6 +28,10 @@
   }
 }
 
+button {
+  outline: none !important;
+}
+
 .body-4 {
   background: rgb(179, 224, 224) !important;
   padding: 20px;
@@ -50,4 +54,14 @@
     margin: 10px;
     padding: 10px;
   }
+}
+
+.body-6 {
+  margin: 50px 0;
+  padding: 10px;
+  background: rgb(153, 193, 211);
+}
+
+.red {
+  color: red;
 }

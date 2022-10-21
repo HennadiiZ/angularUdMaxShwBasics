@@ -24,6 +24,11 @@ export class ServerComponent implements OnInit {
   serverStatusTwo = false;
   serversArray = ['TestServer1', 'TestServer2'];
 
+  serversArrayTwo: any[] = ['TestServer1'];
+
+  secretPass: any = 'Tuna';
+  log:any = [];
+
   constructor() {
     this.serverStatus = Math.random() > 0.5 ? 'offline' : 'online';
   }
@@ -65,6 +70,12 @@ export class ServerComponent implements OnInit {
 
   getColorTwo(): string {
     return this.serverStatusTwo === true ? 'green' : 'red';
+  }
+
+  serverStatusChange(): void {
+    this.serverStatusTwo = !this.serverStatusTwo;
+    // this.serversArrayTwo.push(1);
+    this.log.push(this.log.length + 1);
   }
 }
 
