@@ -10,6 +10,9 @@ import { SuccessComponent } from './success/success.component';
 import { FormsModule } from '@angular/forms';
 import { CockpitComponent } from './cockpit/cockpit.component';
 import { ServerElementComponent } from './server-element/server-element.component';
+import { GameControlComponent } from './game-control/game-control.component';
+import { OddComponent } from './odd/odd.component';
+import { EvenComponent } from './even/even.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { ServerElementComponent } from './server-element/server-element.componen
     WarningAlertComponent,
     SuccessComponent,
     CockpitComponent,
-    ServerElementComponent
+    ServerElementComponent,
+    GameControlComponent,
+    OddComponent,
+    EvenComponent
   ],
   imports: [
     BrowserModule,
@@ -105,3 +111,5 @@ export class AppModule {}
 
 // 81. @ContentChild() in Angular 8+
 // 82. Getting Access to ng-content with @ContentChild
+
+// Assignment 4: Practicing Property & Event Binding and View Encapsulation

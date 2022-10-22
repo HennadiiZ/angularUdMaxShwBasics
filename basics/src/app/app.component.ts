@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   serverElements: any = [];
+  showNumbers: number = 0;
+
+
+  oddNumbers: number[] = [];
+  evenNumbers: number[] = [];
+
   constructor() {
     console.log(this.serverElements);
   }
@@ -42,5 +48,15 @@ export class AppComponent {
 
   onChangeFirst() {
     this.serverElements[0].name = "changed!";
+  }
+
+  number(number:number) {
+    this.showNumbers = number;
+
+    if (number % 2 === 0) {
+      this.evenNumbers.push(number);
+    } else {
+      this.oddNumbers.push(number);
+    }
   }
 }
