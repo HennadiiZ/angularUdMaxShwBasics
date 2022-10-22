@@ -102,3 +102,6 @@ export class AppModule {}
 // 78. Understanding the Component Lifecycle
 // 79. Seeing Lifecycle Hooks in Action
 // 80. Lifecycle Hooks and Template Access
+
+// 81. @ContentChild() in Angular 8+
+// 82. Getting Access to ng-content with @ContentChild
