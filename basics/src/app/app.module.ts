@@ -15,6 +15,7 @@ import { OddComponent } from './odd/odd.component';
 import { EvenComponent } from './even/even.component';
 import { BasicHighlightDirective } from './directives/basic-highlight.directive';
 import { BetterHighlightDirective } from './directives/better-highlight.directive';
+import { UnlessDirective } from './directives/unless.directive';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { BetterHighlightDirective } from './directives/better-highlight.directiv
     OddComponent,
     EvenComponent,
     BasicHighlightDirective,
-    BetterHighlightDirective
+    BetterHighlightDirective,
+    UnlessDirective
   ],
   imports: [
     BrowserModule,
@@ -133,3 +135,5 @@ export class AppModule {}
 // 99. Binding to Directive Properties (2)
 
 // 100. What Happens behind the Scenes on Structural Directives
+
+// 101. Building a Structural Directive
