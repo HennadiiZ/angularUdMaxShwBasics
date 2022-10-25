@@ -17,6 +17,8 @@ export class AppComponent {
   numbers = [1, 2, 3, 4, 5];
   onlyOdd = false;
 
+  value = 10;
+
   constructor() {
     console.log(this.serverElements);
   }

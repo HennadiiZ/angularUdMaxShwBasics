@@ -103,13 +103,21 @@
         > 2222</p>
       </ng-template>
 
-      <p >2222</p>
+
 
       <li *appUnless="onlyOdd"
         class="list-group-item"
       >
         999
       </li>
+
+      <p >ngSwitch</p>
+      <div [ngSwitch]="value">
+        <p *ngSwithCase="5">Value is 5</p>
+        <p *ngSwithCase="15">Value is 15</p>
+        <p *ngSwithCase="25">Value is 25</p>
+        <p *ngSwithDefault="25">Value is Default</p>
+      </div>
 
     </div>
   </div>

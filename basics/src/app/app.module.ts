@@ -137,3 +137,5 @@ export class AppModule {}
 // 100. What Happens behind the Scenes on Structural Directives
 
 // 101. Building a Structural Directive
+
+// 102. Understanding ngSwitch
