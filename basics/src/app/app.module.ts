@@ -131,3 +131,5 @@ export class AppModule {}
 
 // 99. Binding to Directive Properties (1)
 // 99. Binding to Directive Properties (2)
+
+// 100. What Happens behind the Scenes on Structural Directives

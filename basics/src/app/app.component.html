@@ -96,6 +96,13 @@
         defaultColor="pink"
       >2222</p>
 
+      <ng-template [ngIf]="!onlyOdd">
+        <p
+          [appBetterHighlight]="'orange'"
+          defaultColor="pink"
+        > 2222</p>
+      </ng-template>
+
 
     </div>
   </div>
