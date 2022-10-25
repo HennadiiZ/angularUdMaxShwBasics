@@ -124,3 +124,5 @@ export class AppModule {}
 // 94. Creating a Basic Attribute Directive
 
 // 95. Using the Renderer to build a Better Attribute Directive
+
+// 97. Using HostListener to Listen to Host Events
