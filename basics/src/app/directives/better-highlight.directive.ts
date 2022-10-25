@@ -9,7 +9,8 @@ export class BetterHighlightDirective implements OnInit{
   @Input() highlightColor: string = 'red';
 
   // @HostBinding('style.backgroundColor') backgroundColorConst: string = 'transparent';
-  @HostBinding('style.backgroundColor') backgroundColorConst: string = this.defaultColor;
+  // @HostBinding('style.backgroundColor') backgroundColorConst: string = this.defaultColor;
+  @HostBinding('style.backgroundColor') backgroundColorConst!: string;
 
 
   constructor(
@@ -19,6 +20,7 @@ export class BetterHighlightDirective implements OnInit{
 
   ngOnInit(): void {
     // this.renderer.setStyle(this.elementRef.nativeElement, 'background', 'lime');
+    this.backgroundColorConst = this.defaultColor;
   }
 
   // @HostListener('mouseenter') mouseover() {}

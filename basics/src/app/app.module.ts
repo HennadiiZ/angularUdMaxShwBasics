@@ -129,4 +129,5 @@ export class AppModule {}
 
 // 98. Using HostBinding to Bind to Host Properties
 
-// 99. Binding to Directive Properties
+// 99. Binding to Directive Properties (1)
+// 99. Binding to Directive Properties (2)
