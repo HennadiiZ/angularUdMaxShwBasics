@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { LoggingService } from '../_services/logging.service';
 
 @Component({
   selector: 'app-account',
@@ -10,12 +11,13 @@ export class AccountComponent implements OnInit {
   @Input() id!: number;
   @Output() statusChanged = new EventEmitter<{id: number, newStatus: string}>();
 
-  constructor() {}
+  constructor(private loggingService: LoggingService) {}
 
   ngOnInit(): void {}
 
   onSetTo(status: string) {
     this.statusChanged.emit({id: this.id, newStatus: status});
-    console.log('A server status changed, new status: ' + status);
+    // console.log('A server status changed, new status: ' + status);
+    this.loggingService.logStatusChange(status);
   }
 }
