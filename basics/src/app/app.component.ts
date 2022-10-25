@@ -14,6 +14,9 @@ export class AppComponent {
   oddNumbers: number[] = [];
   evenNumbers: number[] = [];
 
+  numbers = [1, 2, 3, 4, 5];
+  onlyOdd = false;
+
   constructor() {
     console.log(this.serverElements);
   }

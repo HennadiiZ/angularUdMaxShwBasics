@@ -64,3 +64,32 @@
     </div>
   </div>
 </div>
+
+<hr>
+
+<div class="container">
+  <p>DIRECTIVES</p>
+  <div class="row">
+    <div class="col-xs-12">
+      <button
+        class="btn btn-primary"
+        (click)="onlyOdd = !onlyOdd">Only show odd numbers</button>
+      <br><br>
+      <ul class="list-group">
+
+        <li
+          class="list-group-item"
+          *ngFor="let number of numbers"
+        >
+          {{number}}
+        </li>
+
+      </ul>
+      <ng-template [ngIf]="onlyOdd">
+        <p>Only odd</p>
+      </ng-template>
+      <p appBasicHighlight>STYLES</p>
+    </div>
+  </div>
+</div>
+
