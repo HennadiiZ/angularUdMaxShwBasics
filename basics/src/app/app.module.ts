@@ -13,7 +13,8 @@ import { ServerElementComponent } from './server-element/server-element.componen
 import { GameControlComponent } from './game-control/game-control.component';
 import { OddComponent } from './odd/odd.component';
 import { EvenComponent } from './even/even.component';
-import { BasicHighlightDirective } from './basic-highlight.directive';
+import { BasicHighlightDirective } from './directives/basic-highlight.directive';
+import { BetterHighlightDirective } from './directives/better-highlight.directive';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { BasicHighlightDirective } from './basic-highlight.directive';
     GameControlComponent,
     OddComponent,
     EvenComponent,
-    BasicHighlightDirective
+    BasicHighlightDirective,
+    BetterHighlightDirective
   ],
   imports: [
     BrowserModule,
@@ -120,3 +122,5 @@ export class AppModule {}
 // 92. ngFor and ngIf Recap (skip)
 // 93. ngClass and ngStyle Recap (skip)
 // 94. Creating a Basic Attribute Directive
+
+// 95. Using the Renderer to build a Better Attribute Directive
