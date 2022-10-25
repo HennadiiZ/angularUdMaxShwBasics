@@ -16,6 +16,8 @@ import { EvenComponent } from './even/even.component';
 import { BasicHighlightDirective } from './directives/basic-highlight.directive';
 import { BetterHighlightDirective } from './directives/better-highlight.directive';
 import { UnlessDirective } from './directives/unless.directive';
+import { AccountComponent } from './account/account.component';
+import { NewAccountComponent } from './new-account/new-account.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { UnlessDirective } from './directives/unless.directive';
     EvenComponent,
     BasicHighlightDirective,
     BetterHighlightDirective,
-    UnlessDirective
+    UnlessDirective,
+    AccountComponent,
+    NewAccountComponent
   ],
   imports: [
     BrowserModule,
@@ -139,3 +143,6 @@ export class AppModule {}
 // 101. Building a Structural Directive
 
 // 102. Understanding ngSwitch
+
+// SERVICES
+
