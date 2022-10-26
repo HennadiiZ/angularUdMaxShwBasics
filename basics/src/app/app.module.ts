@@ -1,169 +1,29 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { AppRoutingModule } from './app-routing.module';
-
 import { AppComponent } from './app.component';
-import { ServerComponent } from './basic-components/server_/server_.component';
-import { ServerElementComponent } from './basic-components/server-element/server-element.component';
-import { ServersComponent } from './basic-components/servers/servers.component';
-import { SuccessComponent } from './basic-components/success/success.component';
-import { WarningAlertComponent } from './basic-components/warning-alert/warning-alert.component';
-import { CockpitComponent } from './basic-components/cockpit/cockpit.component';
-import { GameControlComponent } from './basic-components/game-control/game-control.component';
-import { OddComponent } from './basic-components/odd/odd.component';
-import { EvenComponent } from './basic-components/even/even.component';
-import { UnlessDirective } from './_directives/unless.directive';
-import { AccountComponent } from './basic-components/account/account.component';
-import { NewAccountComponent } from './basic-components/new-account/new-account.component';
-
-import { BasicHighlightDirective } from './_directives/basic-highlight.directive';
-import { BetterHighlightDirective } from './_directives/better-highlight.directive';
+import { EditServerComponent } from './servers/edit-server/edit-server.component';
 import { HomeComponent } from './home/home.component';
-import { EditServerComponent } from './basic-components/servers/edit-server/edit-server.component';
-import { UsersComponent } from './users/users.component';
+import { ServerComponent } from './servers/server/server.component';
+import { ServersComponent } from './servers/servers.component';
 import { UserComponent } from './users/user/user.component';
+import { UsersComponent } from './users/users.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ServerComponent,
-    ServersComponent,
-    WarningAlertComponent,
-    SuccessComponent,
-    CockpitComponent,
-    ServerElementComponent,
-    GameControlComponent,
-    OddComponent,
-    EvenComponent,
-    BasicHighlightDirective,
-    BetterHighlightDirective,
-    UnlessDirective,
-    AccountComponent,
-    NewAccountComponent,
     HomeComponent,
-    EditServerComponent,
     UsersComponent,
-    UserComponent
+    ServersComponent,
+    UserComponent,
+    EditServerComponent,
+    ServerComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
-
-
-
-
-// 18. Creating a New Component
-
-// 19. Understanding the Role of AppModule and Component Declaration
-// 20. Using Custom Components
-// 21. Creating Components with the CLI & Nesting Components
-// 22. Working with Component Templates
-
-// A Basic Project Setup using Bootstrap for Styling
-
-// 24. Fully Understanding the Component Selector
-// 25. [OPTIONAL] Assignment Solution
-
-
-// 26. What is Databinding?
-// 27. String Interpolation
-// 28. Property Binding
-// 29. Property Binding vs String Interpolation
-// 30. Event Binding
-// 31. Bindable Properties and Events
-    // Googling for YOUR_ELEMENT properties  or YOUR_ELEMENT events
-// 32. Passing and Using Data with Event Binding
-// 33. Important: FormsModule is Required for Two-Way-Binding!
-    // ngModel  directive
-    // FormsModule  to the imports[]  array in the AppModule.
-// 34. Two-Way-Databinding
-
-// 35. Combining all Forms of Databinding
-// 36. [OPTIONAL] Assignment Solution
-
-// 37. Understanding Directives
-// 38. Using ngIf to Output Data Conditionally
-// 39. Enhancing ngIf with an Else Condition
-// 40. Styling Elements Dynamically with ngStyle
-// 41. Applying CSS Classes Dynamically with ngClass
-
-// 42. Outputting Lists with ngFor
-// Assignment 3: Practicing Directives
-// 43. [OPTIONAL] Assignment Solution
-// 44. Getting the Index when using ngFor
-
-
-// Section 4: DEBUGGING
-
-
-
-// 65. Splitting Apps into Components
-// 66. Property & Event Binding Overview
-
-// 67. Binding to Custom Properties
-// 68. Assigning an Alias to Custom Properties
-// 69. Binding to Custom Events
-// 70. Assigning an Alias to Custom Events
-// 71. Custom Property and Event Binding Summary
-
-// 72. Understanding View Encapsulation
-// 73. More on View Encapsulation
-
-// 74. Using Local References in Templates
-
-// 75. @ViewChild() in Angular 8+
-// 76. Getting Access to the Template & DOM with @ViewChild
-
-// 77. Projecting Content into Components with ng-content
-
-
-// 78. Understanding the Component Lifecycle
-// 79. Seeing Lifecycle Hooks in Action
-// 80. Lifecycle Hooks and Template Access
-
-// 81. @ContentChild() in Angular 8+
-// 82. Getting Access to ng-content with @ContentChild
-
-// Assignment 4: Practicing Property & Event Binding and View Encapsulation
-
-// DIRECTIVES
-// 92. ngFor and ngIf Recap (skip)
-// 93. ngClass and ngStyle Recap (skip)
-// 94. Creating a Basic Attribute Directive
-
-// 95. Using the Renderer to build a Better Attribute Directive
-
-// 97. Using HostListener to Listen to Host Events
-
-// 98. Using HostBinding to Bind to Host Properties
-
-// 99. Binding to Directive Properties (1)
-// 99. Binding to Directive Properties (2)
-
-// 100. What Happens behind the Scenes on Structural Directives
-
-// 101. Building a Structural Directive
-
-// 102. Understanding ngSwitch
-
-// SERVICES
-
-// 107. Creating a Logging Service
-
-// 108. Injecting the Logging Service into Components
-// 109. Creating a Data Service
-// 110. Understanding the Hierarchical Injector
-// 111. How many Instances of Service Should It Be?
-// 112. Injecting Services into Services
-// 113. Using Services for Cross-Component Communication
-// 114. A Different Way Of Injecting Services
-
-// ROUTING
-
+export class AppModule { }

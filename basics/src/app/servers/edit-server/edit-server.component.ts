@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { ServersService } from 'src/app/_services/servers.service';
+
+import { ServersService } from '../servers.service';
 
 @Component({
   selector: 'app-edit-server',
   templateUrl: './edit-server.component.html',
-  styleUrls: ['./edit-server.component.scss']
+  styleUrls: ['./edit-server.component.css']
 })
 export class EditServerComponent implements OnInit {
-
   // server: {id: number, name: string, status: string};
   server: any;
   serverName = '';
