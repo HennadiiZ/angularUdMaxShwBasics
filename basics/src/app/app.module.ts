@@ -46,3 +46,5 @@ export class AppModule { }
 
 // 127. Setting up and Loading Routes
 // 128. Navigating with Router Links
+
+// 129. Understanding Navigation Paths
