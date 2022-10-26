@@ -1,23 +1,28 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { ServerComponent } from './server/server.component';
-import { ServersComponent } from './servers/servers.component';
-import { WarningAlertComponent } from './warning-alert/warning-alert.component';
-import { SuccessComponent } from './success/success.component';
 import { FormsModule } from '@angular/forms';
-import { CockpitComponent } from './cockpit/cockpit.component';
-import { ServerElementComponent } from './server-element/server-element.component';
-import { GameControlComponent } from './game-control/game-control.component';
-import { OddComponent } from './odd/odd.component';
-import { EvenComponent } from './even/even.component';
-import { BasicHighlightDirective } from './directives/basic-highlight.directive';
-import { BetterHighlightDirective } from './directives/better-highlight.directive';
-import { UnlessDirective } from './directives/unless.directive';
-import { AccountComponent } from './account/account.component';
-import { NewAccountComponent } from './new-account/new-account.component';
+import { AppRoutingModule } from './app-routing.module';
+
+import { AppComponent } from './app.component';
+import { ServerComponent } from './basic-components/server_/server_.component';
+import { ServerElementComponent } from './basic-components/server-element/server-element.component';
+import { ServersComponent } from './basic-components/servers/servers.component';
+import { SuccessComponent } from './basic-components/success/success.component';
+import { WarningAlertComponent } from './basic-components/warning-alert/warning-alert.component';
+import { CockpitComponent } from './basic-components/cockpit/cockpit.component';
+import { GameControlComponent } from './basic-components/game-control/game-control.component';
+import { OddComponent } from './basic-components/odd/odd.component';
+import { EvenComponent } from './basic-components/even/even.component';
+import { UnlessDirective } from './_directives/unless.directive';
+import { AccountComponent } from './basic-components/account/account.component';
+import { NewAccountComponent } from './basic-components/new-account/new-account.component';
+
+import { BasicHighlightDirective } from './_directives/basic-highlight.directive';
+import { BetterHighlightDirective } from './_directives/better-highlight.directive';
+import { HomeComponent } from './home/home.component';
+import { EditServerComponent } from './basic-components/servers/edit-server/edit-server.component';
+import { UsersComponent } from './users/users.component';
+import { UserComponent } from './users/user/user.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +40,11 @@ import { NewAccountComponent } from './new-account/new-account.component';
     BetterHighlightDirective,
     UnlessDirective,
     AccountComponent,
-    NewAccountComponent
+    NewAccountComponent,
+    HomeComponent,
+    EditServerComponent,
+    UsersComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
@@ -155,3 +164,6 @@ export class AppModule {}
 // 112. Injecting Services into Services
 // 113. Using Services for Cross-Component Communication
 // 114. A Different Way Of Injecting Services
+
+// ROUTING
+

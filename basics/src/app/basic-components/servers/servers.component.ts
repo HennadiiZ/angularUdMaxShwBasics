@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServersService } from 'src/app/_services/servers.service';
 
 @Component({
   selector: 'app-servers',
@@ -10,8 +11,12 @@ export class ServersComponent implements OnInit {
 
   // serversArray = ['TestServer1', 'TestServer2'];
 
-  constructor() {}
+  public servers: {id: number, name: string, status: string}[] = [];
 
-  ngOnInit(): void {}
+  constructor(private serversService: ServersService) { }
+
+  ngOnInit() {
+    this.servers = this.serversService.getServers();
+  }
 
 }
