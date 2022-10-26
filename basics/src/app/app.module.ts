@@ -147,3 +147,11 @@ export class AppModule {}
 // SERVICES
 
 // 107. Creating a Logging Service
+
+// 108. Injecting the Logging Service into Components
+// 109. Creating a Data Service
+// 110. Understanding the Hierarchical Injector
+// 111. How many Instances of Service Should It Be?
+// 112. Injecting Services into Services
+// 113. Using Services for Cross-Component Communication
+// 114. A Different Way Of Injecting Services

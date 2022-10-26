@@ -1,35 +1,48 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { AccountService } from './_services/account.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
+
 
 //----------------SERVICES
-  accounts = [
-    {
-      name: 'Master Account',
-      status: 'active'
-    },
-    {
-      name: 'Testaccount',
-      status: 'inactive'
-    },
-    {
-      name: 'Hidden Account',
-      status: 'unknown'
-    }
-  ];
+constructor(
+  private accountService: AccountService
+) {}
+  // accounts = [
+  //   {
+  //     name: 'Master Account',
+  //     status: 'active'
+  //   },
+  //   {
+  //     name: 'Testaccount',
+  //     status: 'inactive'
+  //   },
+  //   {
+  //     name: 'Hidden Account',
+  //     status: 'unknown'
+  //   }
+  // ];
 
-  onAccountAdded(newAccount: {name: string, status: string}) {
-    this.accounts.push(newAccount);
+  accounts: {name: string, status: string}[] = [];
+
+  ngOnInit() {
+    this.accounts = this.accountService.accounts;
   }
 
-  onStatusChanged(updateInfo: {id: number, newStatus: string}) {
-    this.accounts[updateInfo.id].status = updateInfo.newStatus;
-  }
+  // onAccountAdded(newAccount: {name: string, status: string}) {
+  //   // this.accounts.push(newAccount);
+  //   this.accountService.addAccount(newAccount.name, newAccount.status);
+  // }
+
+  // onStatusChanged(updateInfo: {id: number, newStatus: string}) {
+  //   // this.accounts[updateInfo.id].status = updateInfo.newStatus;
+  //   this.accountService.updateAccount(updateInfo.id, updateInfo.newStatus);
+  // }
 
 
 //----------------SERVICES
@@ -53,9 +66,9 @@ export class AppComponent {
 
   value = 10;
 
-  constructor() {
-    console.log(this.serverElements);
-  }
+  // constructor() {
+  //   console.log(this.serverElements);
+  // }
 
   // newServerName = '';
   // newServerContent = '';
