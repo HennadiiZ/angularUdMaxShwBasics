@@ -50,3 +50,5 @@ export class AppModule { }
 // 129. Understanding Navigation Paths
 
 // 130. Styling Active Router Links
+
+// 131. Navigating Programmatically
