@@ -52,3 +52,5 @@ export class AppModule { }
 // 130. Styling Active Router Links
 
 // 131. Navigating Programmatically
+
+// 132. Using Relative Paths in Programmatic Navigation
