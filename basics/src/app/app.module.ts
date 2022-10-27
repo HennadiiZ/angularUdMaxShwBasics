@@ -18,7 +18,10 @@ const appRoutes: Routes = [
   // { path: 'users/1', component: UserComponent } // localhost:4200/users/user-id
   // { path: 'users/2', component: UserComponent } // localhost:4200/users/user-id
   // { path: 'users/3', component: UserComponent } // localhost:4200/users/user-id
-  { path: 'users/:id', component: UserComponent } // localhost:4200/users/user-id
+
+  // { path: 'users/:id', component: UserComponent } // localhost:4200/users/user-id
+
+  { path: 'users/:id/:name', component: UserComponent } // localhost:4200/users/id/name
 ];
 
 @NgModule({
@@ -60,3 +63,5 @@ export class AppModule { }
 // 132. Using Relative Paths in Programmatic Navigation
 
 // 133. Passing Parameters to Routes
+
+// 134. Fetching Route Parameters
