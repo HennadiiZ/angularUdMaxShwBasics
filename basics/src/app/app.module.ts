@@ -14,7 +14,11 @@ import { HttpClientModule } from '@angular/common/http';
 const appRoutes: Routes = [
   { path: '', component: HomeComponent }, // localhost:4200/
   { path: 'servers', component: ServersComponent }, // localhost:4200/servers
-  { path: 'users', component: UsersComponent } // localhost:4200/users
+  { path: 'users', component: UsersComponent }, // localhost:4200/users
+  // { path: 'users/1', component: UserComponent } // localhost:4200/users/user-id
+  // { path: 'users/2', component: UserComponent } // localhost:4200/users/user-id
+  // { path: 'users/3', component: UserComponent } // localhost:4200/users/user-id
+  { path: 'users/:id', component: UserComponent } // localhost:4200/users/user-id
 ];
 
 @NgModule({
@@ -54,3 +58,5 @@ export class AppModule { }
 // 131. Navigating Programmatically
 
 // 132. Using Relative Paths in Programmatic Navigation
+
+// 133. Passing Parameters to Routes
