@@ -15,4 +15,8 @@ export class HomeComponent implements OnInit {
   onLoadSevers(): void {
     this.router.navigate(['/servers']);
   }
+
+  onLoadSever(id: number): void {
+    this.router.navigate(['/servers', id, 'edit'], { queryParams: {allowEdit: '1'}, fragment: 'loading' });
+  }
 }

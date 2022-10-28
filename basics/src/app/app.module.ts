@@ -14,6 +14,9 @@ import { HttpClientModule } from '@angular/common/http';
 const appRoutes: Routes = [
   { path: '', component: HomeComponent }, // localhost:4200/
   { path: 'servers', component: ServersComponent }, // localhost:4200/servers
+  { path: 'servers/:id/edit', component: EditServerComponent }, // localhost:4200/servers/1/edit
+
+
   { path: 'users', component: UsersComponent }, // localhost:4200/users
   // { path: 'users/1', component: UserComponent } // localhost:4200/users/user-id
   // { path: 'users/2', component: UserComponent } // localhost:4200/users/user-id
@@ -69,3 +72,5 @@ export class AppModule { }
 // 135. Fetching Route Parameters Reactively
 
 // 136. An Important Note about Route
+
+// 137. Passing Query Parameters and Fragments
