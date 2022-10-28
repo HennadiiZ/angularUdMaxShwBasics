@@ -75,3 +75,6 @@ export class AppModule { }
 // 139. Practicing and some Common Gotchas
 
 // 140. Setting up Child (Nested) Routes
+
+// 141. Using Query Parameters - Practice
+// 142. Configuring the Handling of Query Parameters

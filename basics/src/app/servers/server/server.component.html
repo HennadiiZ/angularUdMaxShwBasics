@@ -1,2 +1,14 @@
 <h5>{{ server.name }}</h5>
 <p>!!! Server status is {{ server.status }}</p>
+
+<!-- <button
+  class="btn btn-primary"
+  [routerLink]="['/servers', server.id]"
+  [queryParams]="{allowEdit: '1'}"
+  [fragment]="'loading'"
+>Edit !!!</button> -->
+
+<button
+  class="btn btn-primary"
+  (click)="onEdit(server.id)"
+>Edit !!!</button>

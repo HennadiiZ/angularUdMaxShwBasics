@@ -21,7 +21,7 @@
         link {{ server.name }}
       </a> -->
 
-      <a
+      <!-- <a
         [routerLink]="['/servers', server.id]"
         [queryParams]="{allowEdit: '1'}"
         [fragment]="'loading'"
@@ -29,7 +29,25 @@
         class="list-group-item"
         *ngFor="let server of servers">
         link {{ server.name }}
+      </a> -->
+
+      <a
+        [routerLink]="['/servers', server.id]"
+        [queryParams]="{allowEdit: server.id === 3 ? '1' : '0'}"
+        [fragment]="'loading'"
+        href="#"
+        class="list-group-item"
+        *ngFor="let server of servers">
+        link {{ server.name }}
       </a>
+
+      <!-- <a
+        [routerLink]="['/servers', server.id]"
+        href="#"
+        class="list-group-item"
+        *ngFor="let server of servers">
+        link::: {{ server.name }}
+      </a> -->
 
     </div>
   </div>
