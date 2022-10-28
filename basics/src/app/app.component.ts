@@ -11,17 +11,17 @@ export class AppComponent {
   constructor(private router: Router) {}
 
   goToHomePage(): void {
-    console.log('Home page');
+    // console.log('Home page');
     this.router.navigate(['']);
   }
 
   goToUsersPage(): void {
-    console.log('Users page');
+    // console.log('Users page');
     this.router.navigate(['users']);
   }
 
   goToServersPage(): void {
-    console.log('Servers page');
+    // console.log('Servers page');
     this.router.navigate(['servers']);
   }
 }

@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 const appRoutes: Routes = [
   { path: '', component: HomeComponent }, // localhost:4200/
   { path: 'servers', component: ServersComponent }, // localhost:4200/servers
+  { path: 'servers/:id', component: ServerComponent }, // localhost:4200/servers
   { path: 'servers/:id/edit', component: EditServerComponent }, // localhost:4200/servers/1/edit
 
 
@@ -75,4 +76,6 @@ export class AppModule { }
 
 // 137. Passing Query Parameters and Fragments
 
-// 38. Retrieving Query Parameters and Fragments
+// 138. Retrieving Query Parameters and Fragments
+
+// 139. Practicing and some Common Gotchas
