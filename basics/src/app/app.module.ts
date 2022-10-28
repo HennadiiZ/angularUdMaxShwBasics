@@ -67,3 +67,5 @@ export class AppModule { }
 // 134. Fetching Route Parameters
 
 // 135. Fetching Route Parameters Reactively
+
+// 136. An Important Note about Route
