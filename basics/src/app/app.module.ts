@@ -74,3 +74,5 @@ export class AppModule { }
 // 136. An Important Note about Route
 
 // 137. Passing Query Parameters and Fragments
+
+// 38. Retrieving Query Parameters and Fragments
