@@ -65,3 +65,5 @@ export class AppModule { }
 // 133. Passing Parameters to Routes
 
 // 134. Fetching Route Parameters
+
+// 135. Fetching Route Parameters Reactively
