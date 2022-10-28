@@ -12,20 +12,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent }, // localhost:4200/
-  { path: 'servers', component: ServersComponent }, // localhost:4200/servers
-  { path: 'servers/:id', component: ServerComponent }, // localhost:4200/servers
-  { path: 'servers/:id/edit', component: EditServerComponent }, // localhost:4200/servers/1/edit
-
-
-  { path: 'users', component: UsersComponent }, // localhost:4200/users
-  // { path: 'users/1', component: UserComponent } // localhost:4200/users/user-id
-  // { path: 'users/2', component: UserComponent } // localhost:4200/users/user-id
-  // { path: 'users/3', component: UserComponent } // localhost:4200/users/user-id
-
-  // { path: 'users/:id', component: UserComponent } // localhost:4200/users/user-id
-
-  { path: 'users/:id/:name', component: UserComponent } // localhost:4200/users/id/name
+  { path: '', component: HomeComponent },
+  { path: 'servers', component: ServersComponent, children: [
+    { path: ':id', component: ServerComponent },
+    { path: ':id/edit', component: EditServerComponent },
+  ]},
+  { path: 'users', component: UsersComponent, children: [
+    { path: ':id/:name', component: UserComponent }
+  ]},
 ];
 
 @NgModule({
@@ -79,3 +73,5 @@ export class AppModule { }
 // 138. Retrieving Query Parameters and Fragments
 
 // 139. Practicing and some Common Gotchas
+
+// 140. Setting up Child (Nested) Routes
