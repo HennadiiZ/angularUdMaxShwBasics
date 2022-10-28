@@ -10,6 +10,7 @@ import { Subscription } from 'rxjs';
 export class UserComponent implements OnInit, OnDestroy {
   user!: {id: number, name: string};
   subscriptions!: Subscription;
+  // subscriptions = new Subscription();
 
   constructor(private route: ActivatedRoute) {}
 
@@ -18,21 +19,20 @@ export class UserComponent implements OnInit, OnDestroy {
       id: this.route.snapshot.params['id'],
       name: this.route.snapshot.params['name']
     }
-    this.subscriptions = this.route.params.subscribe(
-      (params: Params) => {
-        this.user.id = params['id'];
-        this.user.name = params['name'];
-      }
-    )
-
-    // this.subscriptions(
-    //   this.route.params.subscribe(
-    //     (params: Params) => {
-    //       this.user.id = params['id'];
-    //       this.user.name = params['name'];
-    //     }
-    //   )
+    // this.subscriptions = this.route.params.subscribe(
+    //   (params: Params) => {
+    //     this.user.id = params['id'];
+    //     this.user.name = params['name'];
+    //   }
     // )
+    this.subscriptions.add(
+      this.route.params.subscribe(
+        (params: Params) => {
+          this.user.id = params['id'];
+          this.user.name = params['name'];
+        }
+      )
+    )
   }
 
   ngOnDestroy():void {
