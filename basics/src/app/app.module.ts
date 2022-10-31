@@ -96,3 +96,5 @@ export class AppModule { }
 
 // 146. An Introduction to Guards
 // 147. Protecting Routes with canActivate
+
+// 148. Protecting Child (Nested) Routes with canActivateChild
