@@ -106,3 +106,5 @@ export class AppModule { }
 // 150. Controlling Navigation with canDeactivate
 
 // 151. Passing Static Data to a Route
+
+// 152. Resolving Dynamic Data with the resolve Guard
