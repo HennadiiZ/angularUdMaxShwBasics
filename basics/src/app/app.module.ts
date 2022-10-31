@@ -84,3 +84,17 @@ export class AppModule { }
 // 142. Configuring the Handling of Query Parameters
 
 // 143. Redirecting and Wildcard Routes
+
+//----------------------------------------------------
+    // this.route.params.subscribe()
+    // this.route.queryParams.subscribe();
+    // this.route.fragment.subscribe();
+
+
+
+    // <a
+    //   [routerLink]="['/servers', server.id]"
+    //   [queryParams]="{allowEdit: server.id === 3 ? '1' : '0'}"
+    //   [fragment]="'loading'"
+    //   link {{ server.name }}
+    // </a>

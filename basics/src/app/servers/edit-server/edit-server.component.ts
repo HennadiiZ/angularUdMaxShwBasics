@@ -27,6 +27,7 @@ export class EditServerComponent implements OnInit {
 
     // this.route.queryParams.subscribe();
     // this.route.fragment.subscribe();
+    // this.route.params.subscribe()
 
     this.route.queryParams.subscribe(
       (params: Params) => {
