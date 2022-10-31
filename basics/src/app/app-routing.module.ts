@@ -42,6 +42,7 @@ const appRoutes: Routes = [
   declarations: [],
   imports: [
     RouterModule.forRoot(appRoutes),
+    // RouterModule.forRoot(appRoutes, {useHash: true}),
     HttpClientModule,
   ],
   exports: [

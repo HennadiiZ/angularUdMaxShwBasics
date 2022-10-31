@@ -108,3 +108,6 @@ export class AppModule { }
 // 151. Passing Static Data to a Route
 
 // 152. Resolving Dynamic Data with the resolve Guard
+
+
+// 153. Understanding Location Strategies
