@@ -22,7 +22,8 @@ const appRoutes: Routes = [
     { path: ':id/:name', component: UserComponent }
   ]},
   { path: 'not-found', component: PageNotFoundComponent },
-  { path: '**', redirectTo: '/not-found'}
+  // { path: '**', redirectTo: '/not-found'}
+  { path: '**', redirectTo: '/not-found', pathMatch: 'full'}
 ];
 
 @NgModule({
@@ -86,7 +87,7 @@ export class AppModule { }
 // 143. Redirecting and Wildcard Routes
 
 //----------------------------------------------------
-    // this.route.params.subscribe()
+    // this.route.params.subscribe();
     // this.route.queryParams.subscribe();
     // this.route.fragment.subscribe();
 
@@ -98,3 +99,6 @@ export class AppModule { }
     //   [fragment]="'loading'"
     //   link {{ server.name }}
     // </a>
+//----------------------------------------------------
+
+// 144. Important: Redirection Path Matching
