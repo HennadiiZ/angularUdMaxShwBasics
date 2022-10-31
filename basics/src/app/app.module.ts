@@ -93,3 +93,6 @@ export class AppModule { }
 // 144. Important: Redirection Path Matching
 
 // 145. Outsourcing the Route Configuration
+
+// 146. An Introduction to Guards
+// 147. Protecting Routes with canActivate
