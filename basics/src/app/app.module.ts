@@ -100,3 +100,5 @@ export class AppModule { }
 // 148. Protecting Child (Nested) Routes with canActivateChild
 
 // 149. Using a Fake Auth Service
+
+// 150. Controlling Navigation with canDeactivate
