@@ -1,3 +1,36 @@
+.body {
+  background: rgb(248, 247, 173) !important;
+}
 .container {
   margin-top: 30px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.parent {
+  position: relative;
+  margin: 0 10px;
+}
+
+.div {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+}
+
+.div-1 {
+  background: rgb(219, 116, 116);
+  z-index: -1;
+}
+
+.div-2 {
+  background: rgb(116, 219, 168);
+  transform: rotate(10deg);
+  z-index: -2;
 }
